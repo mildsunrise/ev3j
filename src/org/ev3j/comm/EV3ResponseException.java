@@ -14,24 +14,24 @@ package org.ev3j.comm;
  * @see Payload#isErrorResponse()
  */
 public class EV3ResponseException extends Exception {
-  private final Payload response;
+    private final Payload response;
 
-  /**
-   * Construct a new exception.
-   * 
-   * @param response The causing error response
-   */
-  public EV3ResponseException(Payload response) {
-    super("Received an error response.");
-    this.response = response;
-  }
-  
-  /**
-   * Get the error response that caused this exception to be thrown.
-   * 
-   * @return The causing error response
-   */
-  public Payload getResponse() {
-    return response;
-  }
+    /**
+     * Construct a new exception.
+     * 
+     * @param response The causing error response
+     */
+    public EV3ResponseException(Payload response) {
+        super("Received an error response.");
+        this.response = response;
+    }
+
+    /**
+     * Get the error response that caused this exception to be thrown.
+     * 
+     * @return The causing error response
+     */
+    public Payload getResponse() {
+        return response;
+    }
 }
