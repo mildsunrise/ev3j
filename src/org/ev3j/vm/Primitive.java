@@ -176,8 +176,4 @@ public final class Primitive {
         return buffer.array();
     }
 
-    //FIXME: handles, addresses, decode
-
-    //FIXME: clear trailing indent
-
 }
