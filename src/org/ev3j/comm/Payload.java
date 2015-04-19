@@ -17,7 +17,7 @@ public interface Payload extends Serializable {
      * 
      * @return The encoded bytes
      */
-    public abstract byte[] encode();
+    public byte[] encode();
 
     /**
      * Returns the payload type. This is typically the first byte
@@ -26,7 +26,7 @@ public interface Payload extends Serializable {
      *
      * @return The payload type
      */
-    public abstract byte getPayloadType();
+    public byte getPayloadType();
 
     /**
      * Tests wether this payload is a response to a previous payload,
@@ -34,7 +34,7 @@ public interface Payload extends Serializable {
      *
      * @return True if this payload is a response, false otherwise
      */
-    public abstract boolean isResponse();
+    public boolean isResponse();
 
     /**
      * Tests wether this payload is a response to a previous payload <em>and</em>
@@ -45,10 +45,10 @@ public interface Payload extends Serializable {
      *
      * @return True if this payload is an error response, false otherwise
      */
-    public abstract boolean isErrorResponse();
+    public boolean isErrorResponse();
 
     @Override
-    public abstract int hashCode();
+    public int hashCode();
 
     /**
      * Compares this payload with another object.
@@ -58,6 +58,6 @@ public interface Payload extends Serializable {
      * and fields than this payload
      */
     @Override
-    public abstract boolean equals(Object obj);
+    public boolean equals(Object obj);
 
 }
