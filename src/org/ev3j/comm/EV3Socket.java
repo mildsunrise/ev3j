@@ -225,5 +225,4 @@ public class EV3Socket {
         byte[] values = sendDirectCommand(program.getBytecode(), locals, globals);
         return ByteBuffer.wrap(values).order(ByteOrder.LITTLE_ENDIAN);
     }
-  
 }
